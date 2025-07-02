@@ -6,14 +6,9 @@ import { Input } from "@/components/ui/shadcn/input";
 import {
   Sparkles,
   Mail,
-  Phone,
-  MapPin,
-  Facebook,
-  Twitter,
-  Instagram,
-  Linkedin,
-  Github,
 } from "lucide-react";
+import { Services, } from "@/libs/config/config.clientList";
+import SocialLinks from "../ui/tailwindcss/SocialLinks";
 
 export default function Footer() {
   return (
@@ -47,56 +42,25 @@ export default function Footer() {
             </div>
 
             {/* Social Links */}
-            <div className="flex space-x-4">
-              {[Facebook, Twitter, Instagram, Linkedin, Github].map(
-                (Icon, index) => (
-                  <Button
-                    key={index}
-                    size="icon"
-                    variant="outline"
-                    className="hover:bg-primary hover:text-primary-foreground bg-transparent"
-                  >
-                    <Icon className="h-4 w-4" />
-                  </Button>
-                )
-              )}
-            </div>
+            <SocialLinks/>
           </div>
 
           {/* Services */}
           <div>
             <h4 className="font-semibold mb-4">Services</h4>
             <ul className="space-y-2 text-muted-foreground">
-              <li>
-                <Link href="#" className="hover:text-primary transition-colors">
-                  Web Development
-                </Link>
-              </li>
-              <li>
-                <Link href="#" className="hover:text-primary transition-colors">
-                  Mobile Apps
-                </Link>
-              </li>
-              <li>
-                <Link href="#" className="hover:text-primary transition-colors">
-                  AR/VR Solutions
-                </Link>
-              </li>
-              <li>
-                <Link href="#" className="hover:text-primary transition-colors">
-                  AI Chatbots
-                </Link>
-              </li>
-              <li>
-                <Link href="#" className="hover:text-primary transition-colors">
-                  Social Media
-                </Link>
-              </li>
-              <li>
-                <Link href="#" className="hover:text-primary transition-colors">
-                  Digital Marketing
-                </Link>
-              </li>
+              {
+                Services.map((service, index) => (
+                  <li key={index}>
+                    <Link
+                      href="#"
+                      className="hover:text-primary transition-colors"
+                    >
+                      {service.title}
+                    </Link>
+                  </li>
+                ))
+              }
             </ul>
           </div>
 
@@ -106,19 +70,7 @@ export default function Footer() {
             <ul className="space-y-3 text-muted-foreground">
               <li className="flex items-center">
                 <Mail className="h-4 w-4 mr-2 text-primary" />
-                hello@sparkverse.com
-              </li>
-              <li className="flex items-center">
-                <Phone className="h-4 w-4 mr-2 text-primary" />
-                +1 (555) 123-4567
-              </li>
-              <li className="flex items-start">
-                <MapPin className="h-4 w-4 mr-2 text-primary mt-1" />
-                <span>
-                  123 Innovation Street
-                  <br />
-                  Tech City, TC 12345
-                </span>
+                contact@sparkverse.com
               </li>
             </ul>
           </div>
@@ -127,7 +79,7 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="py-6 border-t border-border flex flex-col md:flex-row justify-between items-center">
           <p className="text-muted-foreground text-sm">
-            © 2024 SparkVerse. All rights reserved.
+            © 2025 SparkVerse. All rights reserved.
           </p>
           <div className="flex space-x-6 text-sm text-muted-foreground mt-4 md:mt-0">
             <Link href="#" className="hover:text-primary transition-colors">

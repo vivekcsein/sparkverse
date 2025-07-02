@@ -1,72 +1,30 @@
 "server only"
-import { MessageSquare, Globe, Gamepad2, Camera, TrendingUp, Bot, Smartphone } from "lucide-react";
+import { MessageSquare, Globe, Gamepad2, Camera, TrendingUp, Bot, Smartphone, } from "lucide-react";
 
 export const testimonials = [
     {
-        name: "Sarah Johnson",
-        role: "CEO, TechStart Inc.",
+        name: "Leena Rao",
+        role: "",
         avatar: "/placeholder.svg?height=60&width=60",
         content:
-            "SparkVerse transformed our vision into a stunning mobile app. Their expertise in React Native and attention to detail exceeded our expectations.",
+            "SparkVerse transformed our vision into a stunning landing web page. Their expertise in React and Nextjs attention to detail exceeded our expectations.",
         rating: 5,
-        company: "TechStart Inc.",
+        company: "Techkilla",
     },
     {
-        name: "Michael Chen",
-        role: "Marketing Director, GrowthCo",
+        name: "Nilesh Signh",
+        role: "Social AR Manager",
         avatar: "/placeholder.svg?height=60&width=60",
         content:
             "The AR filters they created for our campaign went viral! Our engagement increased by 300%. Absolutely incredible work.",
         rating: 5,
-        company: "GrowthCo",
-    },
-    {
-        name: "Emily Rodriguez",
-        role: "Founder, CreativeSpace",
-        avatar: "/placeholder.svg?height=60&width=60",
-        content:
-            "From website development to social media strategy, SparkVerse delivered everything on time and beyond our expectations.",
-        rating: 5,
-        company: "CreativeSpace",
-    },
-    {
-        name: "David Kim",
-        role: "CTO, InnovateLab",
-        avatar: "/placeholder.svg?height=60&width=60",
-        content:
-            "Their AI chatbot solution revolutionized our customer support. Response times improved by 80% and customer satisfaction soared.",
-        rating: 5,
-        company: "InnovateLab",
-    },
-    {
-        name: "Lisa Thompson",
-        role: "Brand Manager, StyleHub",
-        avatar: "/placeholder.svg?height=60&width=60",
-        content:
-            "The team at SparkVerse understood our brand perfectly. The website they built is not just beautiful, but converts amazingly well.",
-        rating: 5,
-        company: "StyleHub",
-    },
-    {
-        name: "Alex Rivera",
-        role: "Game Developer, PlayForward",
-        avatar: "/placeholder.svg?height=60&width=60",
-        content:
-            "Working with SparkVerse on our AR game was a game-changer. Their technical expertise and creative vision brought our concept to life.",
-        rating: 5,
-        company: "PlayForward",
+        company: "SnapMagic",
     },
 ]
 
 export const clientLogos = [
-    { name: "TechStart", logo: "TS" },
+    { name: "Techkilla", logo: "TS" },
     { name: "GrowthCo", logo: "GC" },
-    { name: "CreativeSpace", logo: "CS" },
-    { name: "InnovateLab", logo: "IL" },
-    { name: "StyleHub", logo: "SH" },
-    { name: "PlayForward", logo: "PF" },
-    { name: "NextGen", logo: "NG" },
-    { name: "FutureTech", logo: "FT" },
 ];
 
 export const features = [
@@ -119,23 +77,16 @@ export const features = [
 
 export const projects = [
     {
-        title: "EcoTrack Mobile App",
-        description: "A React Native app that helps users track their carbon footprint with AR visualization features.",
+        title: "Starry Night Snapchat Filter",
+        description: "Viral Snapchat filters for a Lidar based devices that increased engagement by 300%.",
         image: "/placeholder.svg?height=300&width=400",
-        tags: ["React Native", "AR", "Expo", "Sustainability"],
-        category: "Mobile App",
-        color: "from-green-500 to-emerald-500",
-    },
-    {
-        title: "FashionAR Filters",
-        description: "Viral Snapchat filters for a fashion brand that increased engagement by 400%.",
-        image: "/placeholder.svg?height=300&width=400",
-        tags: ["AR", "Snapchat", "Fashion", "Social Media"],
+        tags: ["AR", "Snapchat", "Viral"],
         category: "AR Experience",
-        color: "from-pink-500 to-rose-500",
+        color: "from-voilet-500 to-blue-500",
+        href: "https://www.snapchat.com/lens/95aae2c64c92405e8402df5144079713",
     },
     {
-        title: "TechCorp Website",
+        title: "Social Media Dashboard",
         description: "Modern, responsive website with advanced animations and seamless user experience.",
         image: "/placeholder.svg?height=300&width=400",
         tags: ["Next.js", "Tailwind", "GSAP", "Responsive"],
@@ -143,28 +94,44 @@ export const projects = [
         color: "from-blue-500 to-cyan-500",
     },
     {
-        title: "GameZone AR Adventure",
+        title: "Shoe Try-On Ar Filter",
         description: "Immersive augmented reality game that blends physical and digital worlds.",
         image: "/placeholder.svg?height=300&width=400",
-        tags: ["AR", "Unity", "Gaming", "Mobile"],
-        category: "AR Game",
+        tags: ["AR", "Gaming", "Mobile"],
+        category: "AR Experience",
+        color: "from-purple-500 to-violet-500",
+    },
+];
+
+export const Services = [
+    {
+        title: "Web Development",
+        description: "Build responsive, modern websites that convert visitors into customers with cutting-edge technologies.",
+        icon: Globe,
+        color: "from-green-500 to-emerald-500",
+    },
+    {
+        title: "Mobile Apps",
+        description: "Create cross-platform mobile applications using React Native and Expo CLI for iOS and Android.",
+        icon: Smartphone,
+        color: "from-teal-500 to-cyan-500",
+    },
+    {
+        title: "AR/VR Solutions",
+        description: "Develop immersive AR/VR experiences that blend digital and physical worlds seamlessly.",
+        icon: Gamepad2,
         color: "from-purple-500 to-violet-500",
     },
     {
-        title: "ChatBot Assistant",
-        description: "AI-powered customer service chatbot with natural language processing.",
-        image: "/placeholder.svg?height=300&width=400",
-        tags: ["AI", "NLP", "Chatbot", "Customer Service"],
-        category: "AI Solution",
-        color: "from-indigo-500 to-blue-500",
+        title: "Social Media",
+        description: "Drive growth with data-driven marketing strategies across all major social media platforms.",
+        icon: MessageSquare,
+        color: "from-blue-500 to-cyan-500",
     },
     {
-        title: "Social Media Dashboard",
-        description: "Comprehensive social media management platform with analytics and automation.",
-        image: "/placeholder.svg?height=300&width=400",
-        tags: ["React", "Analytics", "Social Media", "Dashboard"],
-        category: "Web Platform",
-        color: "from-orange-500 to-red-500",
-        href: "",
+        title: "Digital Marketing",
+        description: "Enhance your online presence with targeted digital marketing campaigns and SEO strategies.",
+        icon: TrendingUp,
+        color: "from-pink-500 to-rose-500",
     },
-]
+];

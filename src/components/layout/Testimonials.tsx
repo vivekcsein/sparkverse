@@ -147,11 +147,11 @@ const Testimonials = () => {
             <div className="text-muted-foreground">Client Satisfaction</div>
           </div>
           <div>
-            <div className="text-4xl font-bold text-primary mb-2">150+</div>
+            <div className="text-4xl font-bold text-primary mb-2">4</div>
             <div className="text-muted-foreground">Projects Completed</div>
           </div>
           <div>
-            <div className="text-4xl font-bold text-primary mb-2">50+</div>
+            <div className="text-4xl font-bold text-primary mb-2">4</div>
             <div className="text-muted-foreground">Happy Clients</div>
           </div>
           <div>

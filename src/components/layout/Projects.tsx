@@ -74,6 +74,10 @@ const Projects = () => {
                 <Image
                   src={project.image || "/placeholder.svg"}
                   alt={project.title}
+                  width={400}
+                  height={300}
+                  loading="lazy"
+                  draggable={false}
                   className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500"
                 />
                 <div className="absolute top-4 left-4">
